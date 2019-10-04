@@ -5,7 +5,145 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TP2_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800
+        Title="MainWindow" Height="670" Width="800
         ">
-    <Grid/>
+
+
+
+
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="791*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl HorizontalAlignment="Left" Width="792" Margin="0,10,0,0" Background="#FFE5E5E5" Grid.ColumnSpan="2">
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Grid Name="Panel" Margin="2,0,2,0">
+                                    <ContentPresenter x:Name="ContentSite"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        ContentSource="Header"
+                                        />
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Panel" Property="Background" Value="#FF1F5683" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="Panel" Property="Background" Value="Black" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="Inicio" Height="25" Width="90" VerticalAlignment="Bottom" Foreground="White">
+                <Grid Background="#FF5B92C0" Margin="-4">
+                    <Image HorizontalAlignment="Left" Height="426" Margin="303,116,0,59" Width="453" Source="Imagen/isometric 3.png"/>
+                    <Image HorizontalAlignment="Left" Margin="0,363,0,0" Width="288" Source="Imagen/esquina 1.png"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="33,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Height="60" Width="260" Text="INSTITUTO" FontFamily="Century Gothic"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="33,139,0,0" TextWrapping="Wrap" Text="DE " VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="24"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="33,192,0,0" TextWrapping="Wrap" Text="PRIVADA" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="36"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="74,127,0,0" TextWrapping="Wrap" Text="ENSEÑANZA" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" FontSize="43"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="17,556,0,0" TextWrapping="Wrap" Text="Asen Boris Yamir" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" FontFamily="Arial"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Cursos" Height="25" Width="90" VerticalAlignment="Top" Foreground="White" >
+                <Grid Background="#FFE5E5E5" Margin="0,10,0,0">
+                    <Grid HorizontalAlignment="Left" Margin="12,0,0,318" Width="749" Background="#FF5B92C0">
+                        <Label Content="AGREGAR CURSO" HorizontalAlignment="Left" Margin="36,8,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FF003866"/>
+                        <Label Content="Tema: " HorizontalAlignment="Left" Margin="38,45,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                        <Label Content="Turno:" HorizontalAlignment="Left" Margin="38,115,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                        <Label Content="Cuota ($):" HorizontalAlignment="Left" Margin="38,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.654" Foreground="White" FontWeight="Bold"/>
+                        <Label x:Name="lbTipo" Content="Tipo:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Margin="248,115,0,0"/>
+                        <Label Content="Inscripcion ($):" HorizontalAlignment="Left" Margin="248,45,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                        <TextBox HorizontalAlignment="Left" Height="22" Margin="38,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146"/>
+                        <TextBox Text="Taller 1" HorizontalAlignment="Left" Height="22" Margin="38,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" x:Name="txbTema" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                        <TextBox Text="890" x:Name="txbCuota" HorizontalAlignment="Left" Height="22" Margin="38,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                        <TextBox x:Name="txbInscripcion" Text="553" HorizontalAlignment="Left" Height="22" Margin="248,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                        <DatePicker Text="3/3/2019" x:Name="dtpTurno" HorizontalAlignment="Left" Margin="38,147,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                        <Button x:Name="btnCurso" BorderThickness="5" Content="Agregar" HorizontalAlignment="Left" Margin="602,193,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.613,-3.045" Background="#FF1F5683" FontWeight="Bold" FontFamily="Global Sans Serif" BorderBrush="White" Height="30" Foreground="White" Click="btnCurso_Click"/>
+                        <ComboBox x:Name="cboTipo" HorizontalAlignment="Left" Margin="245,147,0,0" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro">
+                            <ComboBoxItem Content="Presencial"/>
+                            <ComboBoxItem Content="Semipresencial" />
+                            <ComboBoxItem Content="No presencial"/>
+                        </ComboBox>
+                        <Label x:Name="lblErrorCursos" Content="¡Completa todos los campos!" HorizontalAlignment="Left" Margin="540,223,0,0" VerticalAlignment="Top" FontFamily="BrowalliaUPC" FontSize="20" FontWeight="Bold" Foreground="#FFF30016" Visibility="Collapsed"/>
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="278" Margin="12,288,0,0" VerticalAlignment="Top" Width="749" Background="Black">
+                        <Label Content="CURSOS DISPONIBLES" HorizontalAlignment="Left" Margin="44,13,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FFFDFDFD"/>
+                        <ListBox x:Name="lbxCursos" HorizontalAlignment="Left" Height="214" Margin="10,54,0,0" VerticalAlignment="Top" Width="729" MouseDoubleClick ="lbxCursos_DoubleCLick"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Alumnos" Height="25" Width="90" VerticalAlignment="Top" Foreground="White">
+                <Grid Background="#FFE5E5E5" Margin="0,10,0,0">
+                    <Grid HorizontalAlignment="Left" Margin="12,0,0,318" Width="749" Background="#FF5B92C0">
+                        <Label Content="AGREGAR ALUMNO" HorizontalAlignment="Left" Margin="36,8,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FF003866"/>
+                        <Label Content="DNI: " HorizontalAlignment="Left" Margin="38,45,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="38,115,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                        <Label Content="Apellido:" HorizontalAlignment="Left" Margin="38,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.654" Foreground="White" FontWeight="Bold"/>
+                        <Label Content="Fecha de nacimiento:" HorizontalAlignment="Left" Margin="248,45,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                        <TextBox HorizontalAlignment="Left" Height="22" Margin="38,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146"/>
+                        <TextBox Text="12345678" x:Name="txbDNI" HorizontalAlignment="Left" Height="22" Margin="38,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderBrush="Gainsboro" BorderThickness="2"/>
+                        <TextBox Text="Perez" x:Name="txbApellido" HorizontalAlignment="Left" Height="22" Margin="38,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderBrush="Gainsboro" BorderThickness="2"/>
+                        <TextBox Text="Juan" x:Name="txbNombre" HorizontalAlignment="Left" Height="22" Margin="38,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderBrush="Gainsboro" BorderThickness="2"/>
+                        <DatePicker Text="9/9/1999" x:Name="dtpNacimiento" HorizontalAlignment="Left" Margin="248,77,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black" BorderBrush="Gainsboro" BorderThickness="2"/>
+
+                        <Button x:Name="btnAlumno" BorderThickness="5" Content="Agregar" HorizontalAlignment="Left" Margin="602,193,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.613,-3.045" Background="#FF1F5683" FontWeight="Bold" FontFamily="Global Sans Serif" BorderBrush="White" Height="30" Foreground="White" Click="btnAlumno_Click"/>
+                        <Label x:Name="lblErrorAlumnos" Content="¡Completa todos los campos!" HorizontalAlignment="Left" Margin="540,223,0,0" VerticalAlignment="Top" FontFamily="BrowalliaUPC" FontSize="20" FontWeight="Bold" Foreground="#FFF30016" Visibility="Collapsed"/>
+                    </Grid>
+                    <Grid HorizontalAlignment="Left" Height="278" Margin="12,288,0,0" VerticalAlignment="Top" Width="749" Background="Black">
+                        <Label Content="ALUMNOS " HorizontalAlignment="Left" Margin="44,12,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FFFDFDFD"/>
+                        <Button x:Name="btnModificarAlumno" Content="Modificar" HorizontalAlignment="Left" Margin="556,21,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" />
+                        <ListBox x:Name="lbxAlumnos" HorizontalAlignment="Left" Height="214" Margin="10,54,0,0" VerticalAlignment="Top" Width="729" MouseDoubleClick ="lbxAlumnos_DoubleCLick"/>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Empleados" Height="25" Width="90"  VerticalAlignment="Top" Foreground="White" BorderThickness="2" BorderBrush="White">
+                <Grid Background="#FFE5E5E5">
+                    <Grid Background="#FFE5E5E5" Margin="0,10,0,0">
+                        <Grid HorizontalAlignment="Left" Margin="12,0,0,318" Width="749" Background="#FF5B92C0">
+                            <Label Content="AGREGAR EMPLEADO" HorizontalAlignment="Left" Margin="36,8,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FF003866"/>
+                            <Label Content="DNI: " HorizontalAlignment="Left" Margin="38,45,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                            <Label Content="Nombre:" HorizontalAlignment="Left" Margin="38,115,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                            <Label Content="Apellido:" HorizontalAlignment="Left" Margin="38,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.654" Foreground="White" FontWeight="Bold"/>
+                            <Label Content="Fecha de nacimiento:" HorizontalAlignment="Left" Margin="248,45,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                            <TextBox HorizontalAlignment="Left" Height="22" Margin="38,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146"/>
+                            <TextBox Text="12345678" x:Name="txbEmpleadoDNI" HorizontalAlignment="Left" Height="22" Margin="38,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                            <TextBox Text="Perez" x:Name="txbEmpleadoApellido" HorizontalAlignment="Left" Height="22" Margin="38,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                            <TextBox Text="Juan" x:Name="txbEmpleadoNombre" HorizontalAlignment="Left" Height="22" Margin="38,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                            <DatePicker Text="9/9/1999" x:Name="dtpEmpleadoNacimiento" HorizontalAlignment="Left" Margin="248,77,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+
+                            <Button x:Name="btnEmpleado" BorderThickness="5" Content="Agregar" HorizontalAlignment="Left" Margin="602,193,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.613,-3.045" Background="#FF1F5683" FontWeight="Bold" FontFamily="Global Sans Serif" BorderBrush="White" Height="30" Foreground="White" Click="btnEmpleado_Click"/>
+                            <Label Content="Fecha de alta:" HorizontalAlignment="Left" Margin="248,112,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                            <DatePicker Text="2/7/2005" x:Name="dtpEmpleadoAlta" HorizontalAlignment="Left" Margin="248,144,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                            <Label Content="Suledo:" HorizontalAlignment="Left" Margin="248,186,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+                            <TextBox Text="33450" x:Name="txbEmpleadoSueldo" HorizontalAlignment="Left" Height="22" Margin="248,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro"/>
+                            <Label Content="Cargo:" HorizontalAlignment="Left" Margin="468,45,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.533,0.231"/>
+                            <ComboBox x:Name="cbxEmpleadoCargo" HorizontalAlignment="Left" Margin="468,77,0,0" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.483,-0.455" Background="#FFE3F2FF" Foreground="Black" BorderThickness="2" BorderBrush="Gainsboro">
+                                <ComboBoxItem IsSelected="True" Content="Docente"/>
+                                <ComboBoxItem Content="Administrativo" />
+                                <ComboBoxItem Content="Limpieza"/>
+                            </ComboBox>
+                            <Label x:Name="lblErrorEmpleados" Content="¡Completa todos los campos!" HorizontalAlignment="Left" Margin="540,223,0,0" VerticalAlignment="Top" FontFamily="BrowalliaUPC" FontSize="20" FontWeight="Bold" Foreground="#FFF30016" Visibility="Collapsed"/>
+                        </Grid>
+                        <Grid HorizontalAlignment="Left" Height="278" Margin="12,288,0,0" VerticalAlignment="Top" Width="749" Background="Black">
+                            <Label Content="EMPLEADOS" HorizontalAlignment="Left" Margin="44,12,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FFFDFDFD"/>
+                            <Button x:Name="btnModificarAlumno1" Content="Modificar" HorizontalAlignment="Left" Margin="556,21,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" />
+                            <ListBox x:Name="lbxEmpelados" HorizontalAlignment="Left" Height="214" Margin="10,54,0,0" VerticalAlignment="Top" Width="729" MouseDoubleClick ="lbxEmpleados_DoubleCLick"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </TabItem>
+
+
+        </TabControl>
+    </Grid>
 </Window>

@@ -6,25 +6,16 @@ using System.Threading.Tasks;
 
 namespace TP2_Bliblioteca_de_Clases
 {
-    class Persona
+    public abstract class Persona
     {
-        int DNI;
+        //  ATRIBUTOS  //
+        public int dni{ get; set; } //test set and get
         string Nombre;
         string Apellido;
         DateTime FechaDeNacimiento;
 
-        public int dni
-        {
-            get
-            {
-                return DNI;
-            }
+        //  SETTERS AND GETTERS  //
 
-            set
-            {
-                DNI = value;
-            }
-        }
 
         public string nombre
         {
@@ -65,37 +56,123 @@ namespace TP2_Bliblioteca_de_Clases
             }
         }
 
+        //  SETTERS AND GETTERS  //
+
+        public Persona(int dni, string nombre, string apellido, DateTime fechaDeNacimiento) {
+            this.dni = dni;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.fechaDeNacimiento = fechaDeNacimiento;
+        }
+
+        //  OTROS METODOS  //
+
         public int Edad()
         {
-            return 18;
+            return DateTime.Today.AddTicks(-FechaDeNacimiento.Ticks).Year - 1;
+        }
+
+        public Persona()
+        {
         }
     }
 
-    class Alumno : Persona
+    public class Alumno : Persona
     {
+        //  ATRIBUTOS  //
+        private List<Cuota> Cuotas;
+
+        //  SETTERS AND GETTERS  //
+        public List<Cuota> cuotas
+        {
+            get
+            {
+                return Cuotas;
+            }
+
+            set
+            {
+                Cuotas = value;
+            }
+        }
+
+        //  CONSTRUCTOR  //
+        public Alumno(int dni, string nombre, string apellido, DateTime fechaDeNacimiento): base(dni,nombre,apellido, fechaDeNacimiento)
+        {
+            //this.cuotas = cuotas;
+        }
+
+        public Alumno() : base()
+        {
+        }
+
+        //  OTROS METODOS  //
         public override string ToString()
         {
-            return dni + " - " + apellido + " " + nombre ;
+            return dni + " - " + apellido + ", " + nombre;
         }
 
         public string ConcatenarDatos()
         {
-            return dni + ";" + apellido + ";" + nombre;
+            return dni + ";" + apellido + ";" + nombre + ";" + fechaDeNacimiento;
+        }
+
+    }
+
+    public class Cuota
+    {
+        double Valor;
+        bool Pagada;
+
+        public double valor
+        {
+            get
+            {
+                return Valor;
+            }
+
+            set
+            {
+                Valor = value;
+            }
+        }
+
+        public bool pagada
+        {
+            get
+            {
+                return Pagada;
+            }
+
+            set
+            {
+                Pagada = value;
+            }
         }
     }
 
-    enum Cargos
+    public enum Cargos{Administrativo,Docente,Limpieza}
+    
+    public class Empleado : Persona
     {
-        Administrativo,
-        Docente,
-        Limpieza,
-    }
-
-    class Empleado : Persona
-    {
+        //  ATRIBUTOS  //
         DateTime FechaDeAlta;
         string Cargo;
         double Sueldo;
+
+        //  SETTERS AND GETTERS  //
+        public DateTime fechaDeAlta
+        {
+            get
+            {
+                return FechaDeAlta;
+            }
+
+            set
+            {
+                FechaDeAlta = value;
+            }
+        }
 
         public double sueldo
         {
@@ -123,15 +200,28 @@ namespace TP2_Bliblioteca_de_Clases
             }
         }
 
+        //  CONSTRUCTOR  //
+        public Empleado(int dni, string nombre, string apellido, DateTime fechaDeNacimiento, DateTime fechaDeAlta, double sueldo, string cargo): base(dni,nombre,apellido, fechaDeNacimiento)
+        {
+            this.fechaDeAlta = fechaDeAlta;
+            this.sueldo = sueldo;
+            this.cargo = cargo;
+        }
+
+        public Empleado() : base()
+        {
+
+        }
+
+        //  OTROS METODOS  //
         public override string ToString()
         {
-            return apellido + "," + nombre;
+            return dni + " - " + apellido + ", " + nombre + " (" + cargo + ")";
         }
 
         public int Antiguedad()
         {
-            //Calcular antiguedad
-            return 30;
+            return DateTime.Today.AddTicks(-FechaDeAlta.Ticks).Year - 1;
         }
     }
 }

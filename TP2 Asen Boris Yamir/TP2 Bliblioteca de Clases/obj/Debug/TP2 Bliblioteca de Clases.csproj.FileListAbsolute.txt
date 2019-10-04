@@ -1,0 +1,25 @@
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\TP2 Bliblioteca de Clases.dll
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\TP2 Bliblioteca de Clases.pdb
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\NLog.dll
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\NLog.xml
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.csprojAssemblyReference.cache
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.csproj.CoreCompileInputs.cache
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.csproj.CopyComplete
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.dll
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.pdb
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\TP2 Bliblioteca de Clases.dll
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\TP2 Bliblioteca de Clases.pdb
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\NLog.dll
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\NLog.xml
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.csprojAssemblyReference.cache
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.csproj.CoreCompileInputs.cache
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.csproj.CopyComplete
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.dll
+C:\Users\Boris Asen\Desktop\P.U\Taller de Lenguajes II\TP2\Repositorio TP2\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.pdb
+E:\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\TP2 Bliblioteca de Clases.dll
+E:\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\TP2 Bliblioteca de Clases.pdb
+E:\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\NLog.dll
+E:\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\bin\Debug\NLog.xml
+E:\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.csprojResolveAssemblyReference.cache
+E:\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.dll
+E:\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Bliblioteca de Clases\obj\Debug\TP2 Bliblioteca de Clases.pdb

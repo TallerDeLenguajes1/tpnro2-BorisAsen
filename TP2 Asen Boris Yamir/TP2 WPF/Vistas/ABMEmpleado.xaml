@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TP2_WPF"
         mc:Ignorable="d"
-        Title="ABMEmpleado" Height="300" Width="300">
-    <Grid>
-        
+        Title="ABMEmpleado" Height="493.003" Width="459.522">
+    <Grid Background="#FF5B92C0">
+        <Grid HorizontalAlignment="Left" Width="445" Background="#FF5B92C0" Margin="0,0,0,88">
+            <Label Content="DETALLES DE EMPLEADO" HorizontalAlignment="Left" Margin="36,17,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FF003866" Width="195"/>
+            <Label Content="DNI: " HorizontalAlignment="Left" Margin="38,70,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Nombre:" HorizontalAlignment="Left" Margin="38,140,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Apellido:" HorizontalAlignment="Left" Margin="38,210,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.654" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Fecha de nacimiento:" HorizontalAlignment="Left" Margin="248,70,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="22" Margin="38,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146"/>
+            <TextBox x:Name="txbModEmpleadoDNI" HorizontalAlignment="Left" Height="22" Margin="38,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black"/>
+            <TextBox x:Name="txbModEmpleadoApellido" HorizontalAlignment="Left" Height="22" Margin="38,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black"/>
+            <TextBox x:Name="txbModEmpleadoNombre" HorizontalAlignment="Left" Height="22" Margin="38,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black"/>
+            <DatePicker x:Name="dtpModEmpleadoNacimiento" HorizontalAlignment="Left" Margin="248,102,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black"/>
+
+            <Button x:Name="btnEmpleado" BorderThickness="5" Content="Modificar" HorizontalAlignment="Left" Margin="285,307,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.613,-3.045" Background="#FF1F5683" FontWeight="Bold" FontFamily="Global Sans Serif" BorderBrush="White" Height="30" Foreground="White" Click="btnModificarEmpleado_Click"/>
+            <Label Content="Fecha de alta:" HorizontalAlignment="Left" Margin="248,137,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <DatePicker x:Name="dtpModEmpleadoAlta" HorizontalAlignment="Left" Margin="248,169,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black"/>
+            <Label Content="Suledo:" HorizontalAlignment="Left" Margin="248,211,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <TextBox x:Name="txbModEmpleadoSueldo" HorizontalAlignment="Left" Height="22" Margin="248,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black"/>
+            <Label Content="Cargo:" HorizontalAlignment="Left" Margin="38,283,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.533,0.231"/>
+            <ComboBox x:Name="cbxModEmpleadoCargo" HorizontalAlignment="Left" Margin="38,315,0,0" VerticalAlignment="Top" Width="146" RenderTransformOrigin="0.483,-0.455" Background="#FFE3F2FF" Foreground="Black">
+                <ComboBoxItem Content="Docente"/>
+                <ComboBoxItem Content="Administrativo" />
+                <ComboBoxItem Content="Limpieza"/>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Margin="0,375,0,0" Width="452" Background="Black">
+            <Label x:Name="lblAsignarCurso" Content="Asignar curso: " HorizontalAlignment="Left" Margin="39,27,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" Foreground="White" Visibility="Hidden"/>
+            <ComboBox x:Name="cboCursosDictar"  HorizontalAlignment="Left" Margin="146,30,0,0" VerticalAlignment="Top" Width="202" Visibility="Hidden"/>
+        </Grid>
+
     </Grid>
 </Window>

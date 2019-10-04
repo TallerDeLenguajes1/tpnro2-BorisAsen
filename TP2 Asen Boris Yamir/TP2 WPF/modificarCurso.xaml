@@ -1,0 +1,36 @@
+﻿<Window x:Class="TP2_WPF.modificarCurso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TP2_WPF"
+        mc:Ignorable="d"
+        Title="Modificar Curso" Height="537.157" Width="558.667">
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid Height="507" VerticalAlignment="Top" Background="#FF5B92C0" HorizontalAlignment="Left" Width="190">
+            <Label Content="Tema: " HorizontalAlignment="Left" Margin="16,10,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Turno:" HorizontalAlignment="Left" Margin="21,78,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Cuota ($):" HorizontalAlignment="Left" Margin="16,148,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.654" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Tipo:" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Margin="21,360,0,0"/>
+            <Label Content="Inscripcion ($):" HorizontalAlignment="Left" Margin="16,218,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="21,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145" x:Name="txbTema" Background="#FFE3F2FF" Foreground="Black"/>
+            <TextBox x:Name="txbCuota" HorizontalAlignment="Left" Height="23" Margin="21,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145" Background="#FFE3F2FF" Foreground="Black"/>
+            <TextBox x:Name="txbInscripcion" HorizontalAlignment="Left" Height="23" Margin="21,249,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145" Background="#FFE3F2FF" Foreground="Black"/>
+            <DatePicker x:Name="dtpTurno" HorizontalAlignment="Left" Margin="21,109,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black"/>
+
+            <Button x:Name="btnCursoListo" BorderThickness="5" Content="Listo" HorizontalAlignment="Left" Margin="57,448,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.613,-3.045" Background="#FF1F5683" FontWeight="Bold" FontFamily="Global Sans Serif" BorderBrush="White" Height="30" Foreground="White"/>
+            <Label Content="Docente:" HorizontalAlignment="Left" Margin="16,289,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.533,0.231"/>
+            <ComboBox x:Name="cbxDocente" HorizontalAlignment="Left" Margin="21,320,0,0" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.483,-0.455" Background="#FFE3F2FF" Foreground="Black"/>
+            <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="21,391,0,0" VerticalAlignment="Top" Width="145" Background="#FFE3F2FF" Foreground="Black">
+                <ComboBoxItem IsSelected="True" Content="Precencial"/>
+                <ComboBoxItem Content="Semiprecencial" />
+                <ComboBoxItem Content="No precencial"/>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Width="361" Background="Black" Margin="190,0,-197,0" >
+            <Label Content="ALUMNOS INSCRIPTOS" HorizontalAlignment="Left" Margin="12,6,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FFFDFDFD"/>
+            <ListBox HorizontalAlignment="Left" Height="446" Margin="12,42,0,0" VerticalAlignment="Top" Width="330"/>
+        </Grid>
+
+    </Grid>
+</Window>

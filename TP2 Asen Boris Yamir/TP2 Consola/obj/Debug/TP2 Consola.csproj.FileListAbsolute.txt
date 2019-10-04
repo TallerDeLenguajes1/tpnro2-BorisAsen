@@ -1,2 +1,24 @@
 E:\Taller de Lenguajes II\TP2 Asen Boris Yamir\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.exe.config
 E:\Taller de Lenguajes II\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.exe.config
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.exe.config
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.exe.config
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.exe
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.pdb
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\NLog.dll
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Bliblioteca de Clases.dll
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Bliblioteca de Clases.pdb
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\NLog.xml
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.csprojAssemblyReference.cache
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.csproj.CoreCompileInputs.cache
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.csproj.CopyComplete
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.exe
+F:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.pdb
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.exe
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Consola.pdb
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\NLog.dll
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Bliblioteca de Clases.dll
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\TP2 Bliblioteca de Clases.pdb
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\bin\Debug\NLog.xml
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.csprojResolveAssemblyReference.cache
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.exe
+E:\Taller de Lenguajes II\tpnro2-BorisAsen\TP2 Asen Boris Yamir\TP2 Consola\obj\Debug\TP2 Consola.pdb

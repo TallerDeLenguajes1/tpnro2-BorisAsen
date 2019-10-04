@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TP2_WPF"
         mc:Ignorable="d"
-        Title="ABMAlumno" Height="300" Width="300">
+        Title="ABMAlumno" Height="405.268" Width="462.274">
     <Grid>
-        
+        <Grid HorizontalAlignment="Left" Height="288" VerticalAlignment="Top" Width="454" Background="#FF5B92C0">
+            <Label Content="DETALLES DE ALUMNO" HorizontalAlignment="Left" Margin="36,13,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="16" FontWeight="Bold" Foreground="#FF003866"/>
+            <Label Content="DNI: " HorizontalAlignment="Left" Margin="38,61,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Nombre:" HorizontalAlignment="Left" Margin="38,131,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Apellido:" HorizontalAlignment="Left" Margin="38,201,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,-0.654" Foreground="White" FontWeight="Bold"/>
+            <Label Content="Fecha de nacimiento:" HorizontalAlignment="Left" Margin="248,61,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+            <TextBox x:Name="txbDNIMod" HorizontalAlignment="Left" Height="22" Margin="38,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black"/>
+            <TextBox x:Name="txbApellidoMod" HorizontalAlignment="Left" Height="22" Margin="38,233,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black"/>
+            <TextBox x:Name="txbNombreMod" HorizontalAlignment="Left" Height="22" Margin="38,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" Background="#FFE3F2FF" Foreground="Black"/>
+            <DatePicker x:Name="dtpNacimientoMod" HorizontalAlignment="Left" Margin="248,93,0,0" VerticalAlignment="Top" Background="#FFE3F2FF" Foreground="Black"/>
+
+            <Button x:Name="btnModificarAlumno" BorderThickness="5" Content="Modificar" HorizontalAlignment="Left" Margin="281,225,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.613,-3.045" Background="#FF1F5683" FontWeight="Bold" FontFamily="Global Sans Serif" BorderBrush="White" Height="30" Foreground="White" Click="btnModificarAlumno_Click" />
+            <ListBox x:Name="testLista" Margin="248,155,175,33" Visibility="Hidden"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="88" Margin="0,287,0,0" VerticalAlignment="Top" Width="454" Background="Black">
+            <Label Content="Inscribir en: " HorizontalAlignment="Left" Margin="39,27,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontWeight="Bold" Foreground="White"/>
+            <ComboBox x:Name="cboCurso"  HorizontalAlignment="Left" Margin="146,30,0,0" VerticalAlignment="Top" Width="202"/>
+        </Grid>
     </Grid>
 </Window>
